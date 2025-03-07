@@ -1,0 +1,90 @@
+body {
+    width: 100vw;
+    height: 100vh; 
+    box-sizing: border-box;
+    font-family: Verdana, Tahoma, sans-serif;
+    background: linear-gradient(360deg, #1B263B, #415A77, #778DA9);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    padding: 20px;
+}
+
+header {
+    text-align: center;
+    color: rgb(218, 215, 205);
+    font-size: 2rem;
+}
+
+main {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+}
+
+#description {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    padding: 20px;
+    gap: 20px;
+    background: rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    outline: thick outset #0D1B2A;
+}
+
+#description h2 {
+    color: #22223b;
+    font-weight: bold;
+    font-size: medium;
+}
+
+#description p {
+    color: #22223b;
+}
+
+#description img {
+    max-width: 250px; 
+    max-height: 430px;
+    border-radius: 10%;
+}
+
+#contact {
+    padding: 20px;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+#contact h2 {
+    color: rgb(218, 215, 205);
+    font-size: 1.5rem;
+}
+
+#contact address p {
+    color:#22223b;
+    font-size: 1.3rem;
+    padding: 10px;
+}
+
+#contact address a {
+    color: #9a8c98;
+}
+
+footer {
+    text-align: center;
+    color: rgb(218, 215, 205);
+}
+
+footer nav ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+
