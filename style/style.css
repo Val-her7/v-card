@@ -97,8 +97,8 @@ body {
     font-family: Verdana, Tahoma, sans-serif;
     background: linear-gradient(360deg, #1B263B, #415A77, #778DA9);
     display: grid;
-    grid-template-columns: repeat(3, auto);
-    grid-template-rows: repeat(3, auto);
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
     padding: 20px;
 }
 
@@ -114,21 +114,21 @@ main {
     gap: 20px;
     padding: 20px;
     display: grid;
-    grid-template-columns: repeat(2, 1fr); 
-}
-
-#description img {
-    width: 250px; 
-    height: 430px;
-    border-radius: 10%;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); 
+    justify-items: center;
+    align-items: center;
 }
 
 #description {
-    padding: 20px;
+    padding: 10px;
     gap: 20px;
     background: rgba(0, 0, 0, 0.2);
     border-radius: 10px;
     outline: thick outset #0D1B2A;
+    display:grid;
+    grid-template-rows: repeat(3, auto);
+    align-items: center;
+    justify-items: center;
 }
 
 #description h2 {
@@ -139,17 +139,26 @@ main {
 
 #description p {
     color: #22223b;
+    text-align: center;
+}
+
+#description img {
+    max-width: 250px; 
+    max-height: 430px;
+    border-radius: 10%;
 }
 
 #contact h2 {
     color: rgb(218, 215, 205);
     font-size: 1.5rem;
+    text-align: center;
 }
 
 #contact address p {
     color:#22223b;
     font-size: 1.3rem;
     padding: 10px;
+    text-align: center;
 }
 
 #contact address a {
