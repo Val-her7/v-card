@@ -176,4 +176,10 @@ footer nav ul {
     grid-template-columns: repeat(2, auto);
 }
 
+footer nav ul li a {
+    display: grid;
+}
 
+footer nav ul li a img[alt^="GitHub"] {
+    justify-self: end;
+}
